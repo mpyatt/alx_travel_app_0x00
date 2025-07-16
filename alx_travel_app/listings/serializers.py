@@ -8,9 +8,6 @@ class ListingSerializer(serializers.ModelSerializer):
 
     This serializer converts Listing model instances to and from JSON representations
     for use in API requests and responses.
-
-    By using 'fields = "__all__"', all fields defined in the Listing model will be included
-    in the serialized output, allowing full CRUD support via DRF views.
     """
 
     class Meta:
@@ -24,10 +21,6 @@ class BookingSerializer(serializers.ModelSerializer):
 
     This serializer handles the transformation of Booking model instances
     to JSON and parsing JSON back to Booking instances for API operations.
-
-    Using 'fields = "__all__"' ensures all model fields are exposed in the API,
-    which is helpful for rapid development but may need refinement for production
-    to exclude sensitive fields as needed.
     """
 
     class Meta:
